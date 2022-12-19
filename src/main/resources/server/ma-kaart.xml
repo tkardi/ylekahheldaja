@@ -1,0 +1,36 @@
+<GDAL_WMS>
+  <Service name="TMS">
+    <Version>1.0.0</Version>
+    <ServerUrl>https://tiles.maaamet.ee/tm/tms/1.0.0/kaart/${z}/${x}/${y}.png</ServerUrl>
+    <Layer>kaart</Layer>
+    <SRS>EPSG:3301</SRS>
+    <ImageFormat>image/png</ImageFormat>
+  </Service>
+  <DataWindow>
+    <UpperLeftX>40500.0</UpperLeftX>
+    <UpperLeftY>7017000.0</UpperLeftY>
+    <LowerRightX>1064500.0</LowerRightX>
+    <LowerRightY>5993000.0</LowerRightY>
+    <TileLevel>14</TileLevel>
+    <YOrigin>bottom</YOrigin>
+  </DataWindow>
+  <Projection>EPSG:3301</Projection>
+  <IdentificationTolerance>2</IdentificationTolerance>
+  <BandsCount>4</BandsCount>
+  <DataType>Byte</DataType>
+  <DataValues NoData="0 0 0 0" min="1 1 1 1" max="255 255 255 255" />
+  <BlockSizeX>256</BlockSizeX>
+  <BlockSizeY>256</BlockSizeY>
+  <MaxConnections>4</MaxConnections>
+  <Timeout>300</Timeout>
+  <OfflineMode>false</OfflineMode>
+  <AdviseRead>false</AdviseRead>
+  <VerifyAdviseRead>true</VerifyAdviseRead>
+  <ClampRequests>false</ClampRequests>
+  <UserAgent>GDAL WMS driver (http://www.gdal.org/frmt_wms.html)</UserAgent>
+  <Accept>mimetype</Accept>
+  <UnsafeSSL>false</UnsafeSSL>
+  <Referer>http://example.foo/</Referer>
+  <ZeroBlockHttpCodes>204</ZeroBlockHttpCodes>
+  <ZeroBlockOnServerException>false</ZeroBlockOnServerException>
+</GDAL_WMS>
